@@ -491,22 +491,79 @@ html {
   height: 0px;
 }
 
+.contactdiv {
+  margin-left: 100px;
+}
+
+.divSkill {
+  margin: 10px;
+  max-width: 250px;
+}
+
+.bodyProject {
+  height: 180px;
+}
+
+.education-section {
+  margin-top: -40px;
+}
+
 @media screen and (max-width: 949px) {
   .home-screen .home-detail .homexp {
     padding-top: 20px;
     margin-top: 20px;
   }
 
+  .bodyMHS {
+    height: 220px;
+  }
+
+  .education-section {
+    margin-top: -60px;
+  }
+
+  .bodySAK {
+    height: 240px;
+  }
+
+  .bodySIP {
+    height: 300px;
+  }
+
+  .bodyAPW {
+    height: 200px;
+  }
+
   #boxSpacing {
     height: 100px;
+  }
+
+  .divSkill {
+    margin: 10px;
+    max-width: 157px;
+  }
+
+  .img-skill {
+    margin-top: -30px;
+    width: auto;
+    max-height: 80px;
   }
 
   h3 {
     font-size: 16pt;
   }
 
+  .experience {
+    margin-top: -20px;
+
+  }
+
+  .contactdiv {
+    margin-left: 70px;
+  }
+
   #imgRizal {
-    margin-top: 50px;
+    margin-top: 70px;
   }
 
   .headerText {
@@ -518,15 +575,15 @@ html {
   }
 
   .home-screen .home-detail .homexp h5 {
-    font-size: 1.2rem !important;
+    font-size: 1.5rem !important;
   }
 
   #rizal {
-    font-size: 1.5rem !important;
+    font-size: 1.7rem !important;
   }
 
   #web {
-    font-size: 1.5rem !important;
+    font-size: 1.7rem !important;
   }
 }
 
@@ -884,6 +941,7 @@ html {
 }
 
 .img-skill {
+  margin-top: -30px;
   width: auto;
   height: 150px;
 }
