@@ -33,6 +33,50 @@
   left: 0;
   top: 0;
 }
+.box i {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.box h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.box p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.box a {
+  display: inline-block;
+  margin-top: 15px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #000;
+}
+.box {
+  background: #fff;
+  padding: 30px;
+  border-radius: 18px;
+  position: relative;
+  transition: all 0.4s ease;
+  height: 395px;
+}
+.box-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+/* 1. Shadow */
+.box-shadow {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+.box-shadow:hover {
+  transform: translateY(-6px);
+}
 </style>
 <body>
   <header class="header">
@@ -115,9 +159,8 @@
       </h2>
       <div class="about__content">
         <div class="about__content-main">
-          <h3 class="about__content-title">Work Experience
-            <div style="width: 30px; height: 5px; background-color: #0062b9; border-radius: 20px;margin-top: 20px;">
-            </div>
+          <h3 class="heading-sec__main"  >Work Experience
+            
           </h3>
           <table style="font-size: 1.8rem;">
             <tr>
@@ -248,9 +291,8 @@
 
         </div>
         <div class="about__content-skills">
-          <h3 class="about__content-title">My Skills
-            <div style="width: 30px; height: 5px; background-color: #0062b9; border-radius: 20px;margin-top: 20px;">
-            </div>
+          <h3 class="heading-sec__main"  >My Skills
+             
 
           </h3>
           <div class="skills">
@@ -269,9 +311,8 @@
 
           </div>
           <div style="margin-top: 50px;"></div>
-           <h3 class="about__content-title">Contact
-            <div style="width: 30px; height: 5px; background-color: #0062b9; border-radius: 20px;margin-top: 20px;">
-            </div>
+           <h3 class="heading-sec__main" >Contact 
+             
 
           </h3>
           <table>
@@ -302,69 +343,7 @@
       </div>
     </div>
   </section>
-  <!-- <section id="work-experience" class="projects" style="padding-bottom: 30px;">
-    <div class="main-container">
-      <h2 class="heading heading-sec heading-sec__mb-bg">
-        <span class="heading-sec__main">Work Experience</span>
-
-      </h2>
-
-      <div class="row" style="margin-top: -40px;">
-        <div class="col-md-1"> </div>
-
-        <div class="col-md-8">
-          <div class="heading">
-            <h3 style="color: black; font-size: 20pt;"><b>PT TOS Information Systems Indonesia</b></h3>
-            <h6 class="font-lite-black" style="font-size: 10pt;color: #777;margin-top: 10px;"><b>SEPTEMBER 2024 -
-                NOW</b></h6>
-            <br>
-            <h2 style="color: black;margin-left: 20px">Software Engineer</h2> 
-            <ul style="margin-left: 20px;font-size: 1.5rem;">
-                <li><div class="bullet"> Developing a school application based on a
-                  website</li>
-                <li>&middot; Making end-of-semester student report</li>
-                <li>&middot; Making student identity report</li>
-                <li>&middot; Creating a schedule and managing exam
-                  scores</li>
-                <li>&middot; Creating login page</li>
-                <li>&middot; Developing a finance application based on
-                  a website with ASP.NET</li>
-                <li>&middot; Developing a distribution application
-                  based on a website with ASP.NET</li>
-              </ul>
-          </div> 
-        </div> 
-        <div class="col-md-3"> </div>
-        
-        <div class="col-md-1"> </div>
-
-        <div class="col-md-8" style="margin-top: 40px;">
-          <div class="heading">
-            <h3 style="color: black; font-size: 20pt;"><b>PT Sysnetsoft</b></h3>
-            <h6 class="font-lite-black" style="font-size: 10pt;color: #777;margin-top: 10px;"><b>AUGUST 2020 -
-                SEPTEMBER 2024</b></h6>
-            <br>
-            <h2 style="color: black;margin-left: 20px">Web Developer</h2> 
-            <ul style="margin-left: 20px;font-size: 1.5rem;">
-                <li>&middot; Developing a school application based on a
-                  website</li>
-                <li>&middot; Making end-of-semester student report</li>
-                <li>&middot; Making student identity report</li>
-                <li>&middot; Creating a schedule and managing exam
-                  scores</li>
-                <li>&middot; Creating login page</li>
-                <li>&middot; Developing a finance application based on
-                  a website with ASP.NET</li>
-                <li>&middot; Developing a distribution application
-                  based on a website with ASP.NET</li>
-              </ul>
-          </div> 
-        </div> 
-        <div class="col-md-3"> </div>
-      </div>
-
-    </div>
-  </section> -->
+ 
   <section id="projects" class="projects  ">
     <div class="main-container">
       <h2 class="heading heading-sec heading-sec__mb-bg">
@@ -373,70 +352,63 @@
       </h2>
       <div class="row" style="margin-top: -70px;">
         <div class="col-md-4" style="margin-top: 30px;">
-          <div class="card">
-            <div class="card-body">
-              <img src="assets/images/mhs.png" alt="Myhomeschool" class="projects__row-img"
+         <div class="box box-shadow" style="background :linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8));color: #fff;padding: 20px; border-radius: 20px;">
+              <img src="assets/images/mhs.png" alt="Software Screenshot" class="projects__row-img"
                 loading="lazy" />
-
-            </div>
+            <h3 class="mt-3">MyHomeSchool</h3>
+            <p style="color: #fff;">MyHomeSchool is a web-based academic information system for managing student data, schedules, grades, and academic reports in an integrated platform.</p>
           </div>
         </div>
         <div class="col-md-4" style="margin-top: 30px;">
-          <div class="card">
-            <div class="card-body">
-              <img src="assets/images/f.png" alt="Software Screenshot" class="projects__row-img"
-                loading="lazy" />
-
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4" style="margin-top: 30px;">
-          <div class="card">
-            <div class="card-body">
+           <div class="box box-shadow" style="background :linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8));color: #fff;padding: 20px; border-radius: 20px;">
               <img src="assets/images/p.png" alt="Software Screenshot" class="projects__row-img"
                 loading="lazy" />
-
-            </div>
+            <h3 class="mt-3">Sistem Informasi Perpustakaan</h3>
+            <p style="color: #fff;">A web-based application for managing books, members, borrowing, and returning processes in an integrated system.</p>
           </div>
         </div>
         <div class="col-md-4" style="margin-top: 30px;">
-          <div class="card">
-            <div class="card-body">
+         <div class="box box-shadow" style="background :linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8));color: #fff;padding: 20px; border-radius: 20px;">
+              <img src="assets/images/f.png" alt="Software Screenshot" class="projects__row-img"
+                loading="lazy" />
+            <h3 class="mt-3">EFinance</h3>
+            <p style="color: #fff;">A web-based school payment system for managing transactions, financial reports, and student payment statuses.</p>
+          </div>
+        </div>
+        <div class="col-md-4" style="margin-top: 30px;">
+          <div class="box box-shadow" style="background :linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8));color: #fff;padding: 20px; border-radius: 20px;">
               <img src="assets/images/pecgi.png" alt="Software Screenshot" class="projects__row-img"
                 loading="lazy" />
-
-            </div>
+            <h3 class="mt-3">PECGI</h3>
+            <p style="color: #fff;">Web-based manufacturing system for Panasonic Global Energy Indonesia to manage production data, monitor manufacturing processes, and generate operational reports efficiently.</p>
           </div>
         </div>
         <div class="col-md-4" style="margin-top: 30px;">
-          <div class="card">
-            <div class="card-body">
+          <div class="box box-shadow" style="background :linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8));color: #fff;padding: 20px; border-radius: 20px;">
               <img src="assets/images/pgmeats.png" alt="Software Screenshot" class="projects__row-img"
                 loading="lazy" />
-
-            </div>
+            <h3 class="mt-3">MyPGM</h3>
+            <p style="color: #fff;">Admin web application for managing staff incident reports, including receiving, reviewing, and responding to reports, as well as managing QR code stickers, surveys, and polls.</p>
           </div>
         </div>
         <div class="col-md-4" style="margin-top: 30px;">
-          <div class="card">
-            <div class="card-body">
-              <img style="height: 155px;" src="assets/images/pis.png" alt="Software Screenshot" class="projects__row-img"
+          <div class="box box-shadow" style="background :linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8));color: #fff;padding: 20px; border-radius: 20px;">
+              <img src="assets/images/pis.png" alt="Software Screenshot" class="projects__row-img"
                 loading="lazy" />
-
-            </div>
+            <h3 class="mt-3">PGMPIS</h3>
+            <p style="color: #fff;">A VB.NET desktop application developed to track vehicle production processes, monitor manufacturing status, and record each production stage to ensure traceability and operational efficiency.</p>
           </div>
         </div>
         <div class="col-md-4" style="margin-top: 30px;">
-          <div class="card">
-            <div class="card-body">
-              <div class="d-flex justify-content-center" style="margin: auto;">
+          <div class="box box-shadow" style="background :linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8));color: #fff;padding: 20px; border-radius: 20px;">
+             <div class="d-flex justify-content-center" style="margin: auto;">
   <img style="width: 100px;" src="assets/images/eatsmobile.png" alt="Software Screenshot" class="projects__row-img"
                 loading="lazy" />
               </div>
-            
-
-            </div>
+            <h3 class="mt-3">MyPGM Mobile</h3>
+            <p style="color: #fff;">Mobile application that enables staff to submit incident reports, scan QR code stickers, and participate in surveys and polls efficiently.</p>
           </div>
+          
         </div>
       </div>
 
