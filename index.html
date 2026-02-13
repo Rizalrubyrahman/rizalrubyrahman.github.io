@@ -1,610 +1,461 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport"
-        content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Rizal Ruby Rahman</title>
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
-        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-    <link
-        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/animate.min.css">
-    <link rel="stylesheet" href="assets/plugins/slider/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/plugins/slider/css/owl.theme.default.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-    <script src="
-    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
-    "></script>
-    <link href="
-    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
-    " rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Rizal Ruby Rahman - Portfolio</title>
+  <meta name="description" />
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
 </head>
+<style>
+  .bullet {
+  position: relative;
+  padding-left: 20px;   /* jarak teks dari bullet */
+  line-height: 1.4;
+}
 
+.bullet::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+</style>
 <body>
-    <!--########################### Header Starts Here ###################### -->
-    <div class="home-screen container-fluid">
-        <div class="home-cover">
-            <nav style="position: fixed; z-index: 999999; width: 100%; display: none;" class="navbar navbar-expand-lg"
-                id="navbar">
-                <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span style="color: white;"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                                fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
-                            </svg></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" style="color: white;font-size: 14pt;" aria-current="page"
-                                    href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" style="color: white;font-size: 14pt;" href="#about_us">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" style="color: white;font-size: 14pt;" href="#services">Work
-                                    Experience</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" style="color: white;font-size: 14pt;"
-                                    href="#testimonial">Portfolio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" style="color: white;font-size: 14pt;"
-                                    href="#educations">Education</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" style="color: white;font-size: 14pt;" href="#portfolio">Skill</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" style="color: white;font-size: 14pt;" href="#cntact_us">Contact</a>
-                            </li>
-
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-
-            <div class="container" id="startchange">
-                <div class="row home-detail">
-
-                    <div class="col-md-7 animated bounceInLeft homexp" style="margin-top: -140px;">
-                        <div id="boxSpacing">&nbsp;</div>
-                        <h5>Hello There,</h5>
-                        <h2 id="rizal">I`m Rizal Ruby Rahman</h2>
-                        <h2 id="web">I`m a web developer</h2>
-                        <!-- <span>Professional <a >Freelance Web Designer</a> </span>
-                           <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p> -->
-                    </div>
-                    <div class="col-md-5 animated bounceInRight hom-img mt-4">
-                        <!-- <img src="assets/images/name.png" style="width: 350px;"> -->
-
-                        <!-- <ul class="socil-icon">
-                                <li>
-                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fab fa-instagram"></i></a> 
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fab fa-dribbble"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fab fa-behance"></i></a>
-                                </li>
-                           </ul> -->
-                    </div>
-                </div>
-                <div class="row home-detail">
-
-                    <div class="col-md-12 d-flex justify-content-center animated bounceInRight hom-img"
-                        style="margin-top: -100px;">
-
-                        <img src="assets/images/Rizal-removebg-preview.png" id="imgRizal" style="width: 250px;">
-
-                        <!-- <ul class="socil-icon">
-                              <li>
-                                  <a href="#"><i class="fab fa-facebook-f"></i></a>
-                              </li>
-                              <li>
-                                  <a href="#"><i class="fab fa-twitter"></i></a>
-                              </li>
-                              <li>
-                                  <a href="#"><i class="fab fa-instagram"></i></a> 
-                              </li>
-                              <li>
-                                  <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                              </li>
-                              <li>
-                                  <a href="#"><i class="fab fa-dribbble"></i></a>
-                              </li>
-                              <li>
-                                  <a href="#"><i class="fab fa-behance"></i></a>
-                              </li>
-                         </ul> -->
-                    </div>
-                </div>
-            </div>
+  <header class="header">
+    <div class="header__content">
+      <div class="header__logo-container">
+        <!-- <div class="header__logo-img-cont">
+            <img
+              src="./assets/png/john-doe.png"
+              alt="Ram Maheshwari Logo Image"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">John Doe</span> -->
+      </div>
+      <div class="header__main">
+        <ul class="header__links">
+          <li class="header__link-wrapper">
+            <a href="./index.html" class="header__link"> Home </a>
+          </li>
+          <li class="header__link-wrapper">
+            <a href="./index.html#about" class="header__link">About </a>
+          </li>
+          <li class="header__link-wrapper">
+            <a href="./index.html#projects" class="header__link">
+              Projects
+            </a>
+          </li>
+         
+        </ul>
+        <div class="header__main-ham-menu-cont">
+          <img src="./assets/svg/ham-menu.svg" alt="hamburger menu" class="header__main-ham-menu" />
+          <img src="./assets/svg/ham-menu-close.svg" alt="hamburger menu close"
+            class="header__main-ham-menu-close d-none" />
         </div>
+      </div>
     </div>
+    <div class="header__sm-menu">
+      <div class="header__sm-menu-content">
+        <ul class="header__sm-menu-links">
+          <li class="header__sm-menu-link">
+            <a href="./index.html"> Home </a>
+          </li>
 
-    <!--########################### About US Starts Here ###################### -->
+          <li class="header__sm-menu-link">
+            <a href="./index.html#about"> About </a>
+          </li>
 
-    <div id="about_us" class="about-us container-fluid">
-        <div class="container">
-            <div class="session-title row d-flex justify-content-center">
-                <h1 style="color: black; font-weight: bold;" class="headerText">About Me</h1>
-                <p>Hi My name is Rizal Ruby Rahman, I live in Karawang, West Java, I was born on 01-October-2000, my
-                    hobbies are listening to music, watching movies and traveling I really like developing web-based
-                    applications, so far my skills are HTML, PHP, asp.net, Bootstrap, Javascript and Laravel</p>
-            </div>
-            <div class="about-row row" style="margin-top:-40px">
-
-                <div class="detail-col col-md-12">
-                    <h2>Rizal Ruby Rahman</h2>
-                    <h6 style="margin-top:-10px">Web Developer</h6>
-
-                    <div class="row" style="margin-top: 30px;">
-                        <div class="col-md-6 col-12">
-                            <div class="info-list">
-                                <ul style="list-style: none;">
-                                    <li><span>Birthday:</span>01-10-2000</li>
-                                    <li><span>City:</span>Karawang</li>
-                                    <li><span>Study:</span>STMIK Dharma Negara Bandung</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-12">
-                            <div class="info-list">
-                                <ul style="list-style: none;">
-                                    <li><span>Age:</span>23 Years</li>
-                                    <li><span>Mail:</span>rizalrubyr@gmail.com</li>
-                                    <li><span>Phone:</span>089522700115</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-
-
-
-            </div>
-        </div>
-
+          </li>
+          <li class="header__sm-menu-link">
+            <a href="./index.html#projects"> Projects </a>
+          </li>
+        </ul>
+      </div>
     </div>
-
-    <!--########################### Services Starts Here ###################### -->
-
-    <div id="services" style="background-color: #f8f7f1;" class="services container-fluid">
-        <div class="container" style="margin-left:-10px">
-            <div class="session-title row d-flex justify-content-center">
-                <h1 style="color: black; font-weight: bold; margin-left: 39px; " class="headerText">
-                    Work Experience
-                </h1>
-            </div>
-            <section class="education-section section">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-5 mt-4">
-                            <div class="heading">
-                                <h3 style="color: black;font-size: 20pt;"><b>PT Sysnetsoft</b></h3>
-                                <h6 class="font-lite-black" style="font-size: 10pt;margin-top: -6px;"><b>AUGUST 2020 -
-                                        FEBRUARY 2024</b></h6>
-                            </div>
-
-                        </div><!-- col-sm-3 -->
-
-                        <div class="col-md-7 mt-4">
-
-                            <div class="education-wrapper">
-                                <div class="education margin-b-50 experience">
-                                    <h5 style="color: black;margin-left: 20px;">Web Developer</h5>
-                                    <ul style="margin-left: 50px;">
-                                        <li>Developing a school application based on a
-                                            website</li>
-                                        <li>Making end-of-semester student report</li>
-                                        <li>Making student identity report</li>
-                                        <li>Creating a schedule and managing exam
-                                            scores</li>
-                                        <li>Creating login page</li>
-                                        <li>Developing a finance application based on
-                                            a website with ASP.NET</li>
-                                        <li>Developing a distribution application
-                                            based on a website with ASP.NET</li>
-                                    </ul>
-                                    <br>
-                                </div><!-- education -->
-
-                            </div><!-- education-wrapper -->
-                        </div><!-- col-sm-9 -->
-                        <div class="col-md-5">
-                            <div class="heading">
-                                <h3 style="color: black; font-size: 20pt;"><b>Kecamatan Jatisari</b></h3>
-                                <h6 class="font-lite-black" style="font-size: 10pt;margin-top: -6px;"><b>JUNE 2017 -
-                                        JULY 2018</b></h6>
-                                <br>
-                            </div>
-
-                        </div><!-- col-sm-3 -->
-
-                        <div class="col-md-7 ">
-
-                            <div class="education-wrapper">
-                                <div class="education margin-b-50 experience">
-                                    <h5 style="color: black;margin-left: 20px">Intern Administration</h5>
-                                    <ul style="margin-left: 50px;">
-                                        <li>Inputting data into Excel</li>
-                                        <li>Archiving files</li>
-
-                                    </ul>
-
-                                </div><!-- education -->
-
-                            </div><!-- education-wrapper -->
-                        </div>
-                    </div><!-- row -->
-                </div><!-- container -->
-
-            </section>
-        </div>
+  </header>
+  <section class="home-hero">
+    <div class="home-hero__content">
+      <h1 class="heading-primary">Rizal Ruby Rahman</h1>
+      <div class="home-hero__info">
+        <p class="text-head" style="color: white;">
+          Web Developer | Software Engineer
+        </p>
+      </div>
+      <div class="home-hero__cta" >
+        <a href="assets/CV Rizal Ruby Rahman.pdf"  style="padding-right: 20px;padding-left: 20px;" target="_blank" class="btn btn--bg">Download CV</a>
+      </div>
     </div>
-    <section id="testimonial" class="customer-serv container-fluid">
-        <br>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1 style="color: black; font-weight: bold;" class="headerText">My latest Works
-                    </h1>
-                </div>
-
-
-            </div>
-
-            <div class="row mt-2">
-                <div class="col-md-6 mt-4">
-                    <div class="card shadow "
-                        style="width: 100%;box-shadow: 10px 10px 19px -5px rgba(125,113,113,0.75);">
-                        <img src="assets/images/mhs.png" class="card-img-top" alt="MyHomeSchool">
-                        <div class="card-body bodyProject bodyMHS">
-                            <a href="https://demo.myhomeschool.co.id/">
-                                <h5 class="card-title" style="font-weight: bold;">My Home School</h5>
-                            </a>
-                            <p class="card-text" style="text-align: justify; font-size: 10pt;">My Home School adalah
-                                aplikasi yang digunakan oleh sekolah untuk mengelola berbagai aspek administrasi dan
-                                operasional, seperti pendaftaran siswa, kehadiran, penilaian, pembayaran biaya sekolah
-                                dan sebagainya di buat menggunakan framework laravel 7.</p>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 mt-4">
-                    <div class="card" style="width: 100%;box-shadow: 10px 10px 19px -5px rgba(125,113,113,0.75);">
-                        <img src="assets/images/f.png" class="card-img-top" alt="MyHomeSchool">
-                        <div class="card-body bodyProject bodySAK">
-                            <h5 class="card-title" style="font-weight: bold;">SAK 4.0</h5>
-                            <p class="card-text" style="text-align: justify; font-size: 10pt;">SAK 4.0 adalah aplikasi
-                                sistem akuntansi keuangan berbasis website yang didesain khusus untuk institusi
-                                pendidikan. Aplikasi ini menawarkan solusi yang komprehensif dan efisien sehingga bisa
-                                mempermudah institusi pendidikan dan sekolah dalam mencatat dan merekam laporan
-                                keuangan dibuat menggunakan ASP.NET.</p>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 mt-4">
-                    <div class="card" style="width: 100%;box-shadow: 10px 10px 19px -5px rgba(125,113,113,0.75);">
-                        <img src="assets/images/p.png" class="card-img-top" alt="MyHomeSchool">
-                        <div class="card-body bodyProject bodySIP">
-                            <h5 class="card-title" style="font-weight: bold;">Sistem Informasi Perpustakaan</h5>
-                            <p class="card-text" style="text-align: justify; font-size: 10pt;">Aplikasi sistem informasi
-                                perpustakaan adalah
-                                sebuah sistem yang dirancang
-                                untuk membantu manajemen informasi di dalam sebuah perpustakaan. Sistem ini terdiri dari
-                                beberapa modul yang saling terintegrasi, seperti modul pengelolaan katalog buku, modul
-                                peminjaman dan pengembalian buku, modul pengembalian denda, dan sebagainya dibuat
-                                menggunakan framework laravel 5.4.</p>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 mt-4">
-                    <div class="card" style="width: 100%;box-shadow: 10px 10px 19px -5px rgba(125,113,113,0.75);">
-                        <img src="assets/images/pw.png" class="card-img-top" alt="MyHomeSchool">
-                        <div class="card-body bodyProject bodyAPW">
-                            <h5 class="card-title" style="font-weight: bold;">Aplikasi Pendataan Warga</h5>
-                            <p class="card-text" style="text-align: justify; font-size: 10pt;"> Aplikasi Sederhana
-                                Pendataan warga adalah sebuah sistem yang dirancang untuk membantu pengumpulan dan
-                                pengelolaan data penduduk di suatu wilayah dibuat menggunakan framework laravel 7.</p>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-    </section>
-    <div id="educations" style="background-color: #f8f7f1;" class="educations container-fluid">
-        <div class="container" style="margin-left:-10px">
-            <div class="session-title row d-flex justify-content-center">
-                <h1 style="color: black; font-weight: bold; margin-left: 39px;" class="headerText">My
-                    Education</h1>
-            </div>
-            <section class="education-section section">
-                <div class="container">
-                    <div class="row" style="margin-left: 50px;">
-                        <div class="col-md-12 mt-4">
-
-                            <div class="education-wrapper">
-                                <div class="education margin-b-50">
-                                    <h3 style="color: black;"><b> Bachelor's degree, STMIK Dharma Negara Bandung</b>
-                                    </h3>
-                                    <h6 class="font-lite-black"><b>2020 - 2023</b></h6>
-                                    <br>
-                                </div><!-- education -->
-
-                            </div><!-- education-wrapper -->
-                        </div><!-- col-sm-9 -->
-                        <div class="col-md-12 ">
-
-                            <div class="education-wrapper">
-                                <div class="education margin-b-50">
-                                    <h3 style="color: black;"><b>Diploma Telecom PDC Karawang</b></h3>
-                                    <h6 class="font-lite-black"><b>2018 - 2020</b></h6>
-                                    <br>
-                                </div><!-- education -->
-
-                            </div><!-- education-wrapper -->
-                        </div>
-                        <div class="col-md-12 ">
-
-                            <div class="education-wrapper">
-                                <div class="education margin-b-50">
-                                    <h3 style="color: black;"><b>SMK Negeri 1 Cilamaya Wetan</b></h3>
-                                    <h6 class="font-lite-black"><b>2015 - 2018</b></h6>
-                                    <br>
-                                </div><!-- education -->
-
-                            </div><!-- education-wrapper -->
-                        </div>
-                    </div><!-- row -->
-                </div><!-- container -->
-
-            </section>
-        </div>
+     
+    <div class="home-hero__mouse-scroll-cont">
+      <div class="mouse"></div>
     </div>
+  </section>
+  <section id="about" style="margin-top: -30px;" class="about sec-pad">
+    <div class="main-container">
+      <h2 class="heading heading-sec heading-sec__mb-med">
+        <span class="heading-sec__main">About Me</span>
+        <span class="heading-sec__sub">
+          I am a Web Developer and Software Engineer focused on building modern, responsive, and user-friendly websites and applications. I am experienced in developing web applications with clean code structure, optimal performance, and a strong focus on user experience. I enjoy learning new technologies and always strive to deliver the best solutions for every challenge
+        </span>
+      </h2>
+      <div class="about__content">
+        <div class="about__content-main">
+          <h3 class="about__content-title">Work Experience
+            <div style="width: 30px; height: 5px; background-color: #0062b9; border-radius: 20px;margin-top: 20px;">
+            </div>
+          </h3>
+          <table style="font-size: 1.8rem;">
+            <tr>
+              <td colspan="2">
+                <h2>PT TOS Information Systems Indonesia</h2>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <span style="font-weight: 600;color:#777">September 2024 - Now</span>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <div style="height: 20px;"></div>
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 20px;"></td>
+              <td>
+                <h3>Software Engineer</h3>
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 20px;"></td>
+              <td style="font-size: 1.4rem;">
+                <div class="bullet">
+                  Maintained and enhanced manufacturing web applications based on ASP.NET, including bug fixes, performance optimization, and feature improvements
+                </div>
+                  
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 20px;"></td>
+              <td style="font-size: 1.4rem;">
+                <div class="bullet"> Maintained desktop applications using VB.NET</div>
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 20px;"></td>
+              <td style="font-size: 1.4rem;">
+                <div class="bullet"> Maintained and developed mobile applications using Flutter and Xamarin</div>
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 20px;"></td>
+              <td style="font-size: 1.4rem;">
+                <div class="bullet"> Developed and printed QR code stickers that can be scanned through mobile applications for identification and tracking purposes</div>
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 20px;"></td>
+              <td style="font-size: 1.4rem;">
+                <div class="bullet"> Developed a web-based vehicle production tracking system to monitor manufacturing processes in real time</div>
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 20px;"></td>
+              <td style="font-size: 1.4rem;">
+                <div class="bullet"> Built a staff attendance system to record employee check-in and check-out digitally</div>
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 20px;"></td>
+              <td style="font-size: 1.4rem;">
+                <div class="bullet">Created digital checksheet reports for quality control and process monitoring</div>
+              </td>
+            </tr>
+             
+              <td colspan="2">
+                <div style="height: 40px;"></div>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <h2>PT Sysnetsoft</h2>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <span style="font-weight: 600;color:#777">August 2020 - September 2024</span>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <div style="height: 20px;"></div>
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 20px;"></td>
+              <td>
+                <h3>Web Developer</h3>
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 20px;"></td>
+              <td style="font-size: 1.4rem;">
+                <div class="bullet"> Developed a web-based school application to manage academic data and school operations</div>
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 20px;"></td>
+              <td style="font-size: 1.4rem;">
+                <div class="bullet"> Created end-of-semester student reports to support academic evaluation and reporting</div>
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 20px;"></td>
+              <td style="font-size: 1.4rem;">
+                <div class="bullet"> Generated student identity reports for administrative and academic purposes</div>
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 20px;"></td>
+              <td style="font-size: 1.4rem;">
+                <div class="bullet"> Developed features for schedule management and exam score processing</div>
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 20px;"></td>
+              <td style="font-size: 1.4rem;">
+                <div class="bullet">Built a web-based finance application using ASP.NET to manage financial data efficiently</div>
+              </td>
+            </tr>
+            
+          </table>
 
-    <!--  ************************* Gallery Starts Here ************************** -->
-    <div id="portfolio" class="gallery container-fluid">
-        <div style="height: 40px;">&nbsp;</div>
-        <div class="container">
-            <div class=" row">
-                <div class="col-md-12">
-                    <h1 style="color: black; font-weight: bold;" class="headerText">My Skill</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="card divSkill col-6 col-sm-4 col-md-3 my-3 mt-4"
-                    style="border-radius:50px 0px 50px 0px;border:3px solid #286f6c;">
-                    <div class="card-title text-center">
-                        <h3 class="mt-3" style="color: black;font-weight:bold;">Laravel</h3>
-                    </div>
-                    <div class="card-body d-flex justify-content-center">
-                        <img src="assets/images/laravel.png" class="img-skill" alt="Laravel">
-                    </div>
-                </div>
-                <div class="card divSkill col-6 col-sm-4 col-md-3 my-3 mt-4"
-                    style="border-radius:50px 0px 50px 0px;border:3px solid #286f6c;">
-                    <div class="card-title text-center">
-                        <h3 class="mt-3" style="color: black;font-weight:bold;">Git</h3>
-                    </div>
-                    <div class="card-body d-flex justify-content-center">
-                        <img src="assets/images/git.png" class="img-skill" alt="Git">
-                    </div>
-                </div>
-                <div class="card divSkill col-6 col-sm-4 col-md-3 my-3 mt-4"
-                    style="border-radius:50px 0px 50px 0px;border:3px solid #286f6c;">
-                    <div class="card-title text-center">
-                        <h3 class="mt-3" style="color: black;font-weight:bold;">PHP</h3>
-                    </div>
-                    <div class="card-body d-flex justify-content-center">
-                        <img src="assets/images/php.png" class="img-skill" alt="php">
-                    </div>
-                </div>
-                <div class="card divSkill col-6 col-sm-4 col-md-3 my-3 mt-4"
-                    style="border-radius:50px 0px 50px 0px;border:3px solid #286f6c;">
-                    <div class="card-title text-center">
-                        <h3 class="mt-3" style="color: black;font-weight:bold;">Javascript</h3>
-                    </div>
-                    <div class="card-body d-flex justify-content-center">
-                        <img src="assets/images/js.png" class="img-skill" alt="Javascript">
-                    </div>
-                </div>
-                <div class="card divSkill col-6 col-sm-4 col-md-3 my-3 mt-4"
-                    style="border-radius:50px 0px 50px 0px;border:3px solid #286f6c;">
-                    <div class="card-title text-center">
-                        <h3 class="mt-3" style="color: black;font-weight:bold;">Bootstrap</h3>
-                    </div>
-                    <div class="card-body d-flex justify-content-center">
-                        <img src="assets/images/bootstrap.png" class="img-skill" alt="bootstrap">
-                    </div>
-                </div>
-                <div class="card divSkill col-6 col-sm-4 col-md-3 my-3 mt-4"
-                    style="border-radius:50px 0px 50px 0px;border:3px solid #286f6c;">
-                    <div class="card-title text-center">
-                        <h3 class="mt-3" style="color: black;font-weight:bold;">CSS</h3>
-                    </div>
-                    <div class="card-body d-flex justify-content-center">
-                        <img src="assets/images/css.png" class="img-skill" alt="css">
-                    </div>
-                </div>
-                <div class="card divSkill col-6 col-sm-4 col-md-3 my-3 mt-4"
-                    style="border-radius:50px 0px 50px 0px;border:3px solid #286f6c;">
-                    <div class="card-title text-center">
-                        <h3 class="mt-3" style="color: black;font-weight:bold;">HTML</h3>
-                    </div>
-                    <div class="card-body d-flex justify-content-center">
-                        <img src="assets/images/html.png" class="img-skill" alt="html">
-                    </div>
-                </div>
-                <div class="card divSkill col-6 col-sm-4 col-md-3 my-3 mt-4"
-                    style="border-radius:50px 0px 50px 0px;border:3px solid #286f6c;">
-                    <div class="card-title text-center">
-                        <h3 class="mt-3" style="color: black;font-weight:bold;">MySQL</h3>
-                    </div>
-                    <div class="card-body d-flex justify-content-center">
-                        <img src="assets/images/sql.png" class="img-skill" alt="sql">
-                    </div>
-                </div>
-                <div class="card divSkill col-6 col-sm-4 col-md-3 my-3 mt-4"
-                    style="border-radius:50px 0px 50px 0px;border:3px solid #286f6c;">
-                    <div class="card-title text-center">
-                        <h3 class="mt-3" style="color: black;font-weight:bold;">ASP.NET</h3>
-                    </div>
-                    <div class="card-body d-flex justify-content-center">
-                        <img src="assets/images/asp.png" class="img-skill" alt="asp">
-                    </div>
-                </div>
-            </div>
+
         </div>
+        <div class="about__content-skills">
+          <h3 class="about__content-title">My Skills
+            <div style="width: 30px; height: 5px; background-color: #0062b9; border-radius: 20px;margin-top: 20px;">
+            </div>
 
+          </h3>
+          <div class="skills">
+            <div class="skills__skill" style="background :linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8));color: #fff;">ASP.NET</div>
+            <div class="skills__skill" style="background :linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8));color: #fff;">C#</div>
+            <div class="skills__skill" style="background :linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8));color: #fff;">VB.NET</div>
+            <div class="skills__skill" style="background :linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8));color: #fff;">Laravel</div>
+            <div class="skills__skill" style="background :linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8));color: #fff;">PHP</div>
+            <div class="skills__skill" style="background :linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8));color: #fff;">Javascript</div>
+            <div class="skills__skill" style="background :linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8));color: #fff;">HTML</div>
+            <div class="skills__skill" style="background :linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8));color: #fff;">CSS</div>
+            <div class="skills__skill" style="background :linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8));color: #fff;">Bootstrap</div>
+            <div class="skills__skill" style="background :linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8));color: #fff;">GIT</div>
+            <div class="skills__skill" style="background :linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8));color: #fff;">MySQL</div>
+            <div class="skills__skill" style="background :linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8));color: #fff;">SQL Server</div>
+
+          </div>
+          <div style="margin-top: 50px;"></div>
+           <h3 class="about__content-title">Contact
+            <div style="width: 30px; height: 5px; background-color: #0062b9; border-radius: 20px;margin-top: 20px;">
+            </div>
+
+          </h3>
+          <table>
+            <tr>
+              <td align="center">
+                <img src="./assets/png/wa.png" style=" height: 40px; " alt="icon"   />
+              </td>
+              <td>
+                 <h3 style="margin-left: 10px;">089522700115</h3>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div style="height: 20px;"></div>
+              </td>
+            </tr>
+            <tr>
+              <td align="center">
+                <img src="./assets/png/mail.png" style=" height: 30px; " alt="icon"   />
+              </td>
+              <td>
+                 <h3 style="margin-left: 10px;">rizalrubyr@gmail.com</h3>
+              </td>
+            </tr>
+          </table>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- <section id="work-experience" class="projects" style="padding-bottom: 30px;">
+    <div class="main-container">
+      <h2 class="heading heading-sec heading-sec__mb-bg">
+        <span class="heading-sec__main">Work Experience</span>
+
+      </h2>
+
+      <div class="row" style="margin-top: -40px;">
+        <div class="col-md-1"> </div>
+
+        <div class="col-md-8">
+          <div class="heading">
+            <h3 style="color: black; font-size: 20pt;"><b>PT TOS Information Systems Indonesia</b></h3>
+            <h6 class="font-lite-black" style="font-size: 10pt;color: #777;margin-top: 10px;"><b>SEPTEMBER 2024 -
+                NOW</b></h6>
+            <br>
+            <h2 style="color: black;margin-left: 20px">Software Engineer</h2> 
+            <ul style="margin-left: 20px;font-size: 1.5rem;">
+                <li><div class="bullet"> Developing a school application based on a
+                  website</li>
+                <li>&middot; Making end-of-semester student report</li>
+                <li>&middot; Making student identity report</li>
+                <li>&middot; Creating a schedule and managing exam
+                  scores</li>
+                <li>&middot; Creating login page</li>
+                <li>&middot; Developing a finance application based on
+                  a website with ASP.NET</li>
+                <li>&middot; Developing a distribution application
+                  based on a website with ASP.NET</li>
+              </ul>
+          </div> 
+        </div> 
+        <div class="col-md-3"> </div>
+        
+        <div class="col-md-1"> </div>
+
+        <div class="col-md-8" style="margin-top: 40px;">
+          <div class="heading">
+            <h3 style="color: black; font-size: 20pt;"><b>PT Sysnetsoft</b></h3>
+            <h6 class="font-lite-black" style="font-size: 10pt;color: #777;margin-top: 10px;"><b>AUGUST 2020 -
+                SEPTEMBER 2024</b></h6>
+            <br>
+            <h2 style="color: black;margin-left: 20px">Web Developer</h2> 
+            <ul style="margin-left: 20px;font-size: 1.5rem;">
+                <li>&middot; Developing a school application based on a
+                  website</li>
+                <li>&middot; Making end-of-semester student report</li>
+                <li>&middot; Making student identity report</li>
+                <li>&middot; Creating a schedule and managing exam
+                  scores</li>
+                <li>&middot; Creating login page</li>
+                <li>&middot; Developing a finance application based on
+                  a website with ASP.NET</li>
+                <li>&middot; Developing a distribution application
+                  based on a website with ASP.NET</li>
+              </ul>
+          </div> 
+        </div> 
+        <div class="col-md-3"> </div>
+      </div>
 
     </div>
-    <!-- ######## Gallery End ####### -->
+  </section> -->
+  <section id="projects" class="projects  ">
+    <div class="main-container">
+      <h2 class="heading heading-sec heading-sec__mb-bg">
+        <span class="heading-sec__main">Projects</span>
 
+      </h2>
+      <div class="row" style="margin-top: -70px;">
+        <div class="col-md-4" style="margin-top: 30px;">
+          <div class="card">
+            <div class="card-body">
+              <img src="assets/images/mhs.png" alt="Myhomeschool" class="projects__row-img"
+                loading="lazy" />
 
-    <!--  ************************* Contact  Starts Here ************************** -->
-    <div id="cntact_us" style="background-color: #f8f7f1;" class="contact-us-single container-fluid">
-        <div class="container" style="margin-left:-10px">
-            <div style="height:40px">&nbsp;</div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="session-title row d-flex justify-content-center">
-                        <h1 style="color: black; font-weight: bold; margin-left: 39px;" class="headerText">My Contact
-                        </h1>
-                    </div>
-                </div>
             </div>
-            <section class="education-section section">
-                <div class="container">
-                    <div class="row contactdiv">
-                        <div class="col-md-12 mt-4">
-
-                            <div class="education-wrapper">
-                                <div class="education margin-b-50">
-                                    <h3 style="color: black;"><b>Email</b></h3>
-                                    <h6 class="font-lite-black"><b><a
-                                                href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=rizalrubyr@gmail.com"
-                                                target="_blank"
-                                                style="text-decoration: underline; color: rgb(50, 50, 255);">rizalrubyr@gmail.com</a>
-                                        </b></h6>
-                                    <br>
-                                </div><!-- education -->
-
-                            </div><!-- education-wrapper -->
-                        </div><!-- col-sm-9 -->
-                        <div class="col-md-12 ">
-
-                            <div class="education-wrapper">
-                                <div class="education margin-b-50">
-                                    <h3 style="color: black;"><b>WhatsApp</b></h3>
-                                    <h6 class="font-lite-black"><b><a
-                                                href="https://api.whatsapp.com/send?phone=6289522700115"
-                                                style="text-decoration: underline; color: rgb(50, 50, 255);">089522700115</a>
-                                        </b></h6>
-                                    <br>
-                                </div><!-- education -->
-
-                            </div><!-- education-wrapper -->
-                        </div>
-                        <div class="col-md-12 ">
-
-                            <div class="education-wrapper">
-                                <div class="education margin-b-50">
-                                    <h3 style="color: black;"><b>Github</b></h3>
-                                    <h6 class="font-lite-black"><b><a href="https://github.com/Rizalrubyrahman"
-                                                style="text-decoration: underline; color: rgb(50, 50, 255);">Rizalrubyrahman</a>
-                                        </b></h6>
-                                    <br>
-                                </div><!-- education -->
-
-                            </div><!-- education-wrapper -->
-                        </div>
-
-                    </div><!-- row -->
-                    <div>&nbsp;</div>
-                    <div>&nbsp;</div>
-                </div><!-- container -->
-
-            </section>
+          </div>
         </div>
+        <div class="col-md-4" style="margin-top: 30px;">
+          <div class="card">
+            <div class="card-body">
+              <img src="assets/images/f.png" alt="Software Screenshot" class="projects__row-img"
+                loading="lazy" />
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" style="margin-top: 30px;">
+          <div class="card">
+            <div class="card-body">
+              <img src="assets/images/p.png" alt="Software Screenshot" class="projects__row-img"
+                loading="lazy" />
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" style="margin-top: 30px;">
+          <div class="card">
+            <div class="card-body">
+              <img src="assets/images/pecgi.png" alt="Software Screenshot" class="projects__row-img"
+                loading="lazy" />
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" style="margin-top: 30px;">
+          <div class="card">
+            <div class="card-body">
+              <img src="assets/images/pgmeats.png" alt="Software Screenshot" class="projects__row-img"
+                loading="lazy" />
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" style="margin-top: 30px;">
+          <div class="card">
+            <div class="card-body">
+              <img style="height: 155px;" src="assets/images/pis.png" alt="Software Screenshot" class="projects__row-img"
+                loading="lazy" />
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" style="margin-top: 30px;">
+          <div class="card">
+            <div class="card-body">
+              <div class="d-flex justify-content-center" style="margin: auto;">
+  <img style="width: 100px;" src="assets/images/eatsmobile.png" alt="Software Screenshot" class="projects__row-img"
+                loading="lazy" />
+              </div>
+            
+
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
+  </section>
+<br><br>
+<br><br>
+  <footer class="main-footer" style="background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8));">
+    <div class="main-container">
+       
 
-    <div style="height: 50px;" class="spacingDiv">&nbsp;</div>
-    <!--  ************************* Footer  Starts Here ************************** -->
+      <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :) -->
+      <div class="main-footer__lower">
+        &copy; Copyright 2026. Made by <b>Rizal Ruby Rahman</b>
+      </div>
+    </div>
+  </footer>
 
-    <footer class="container-fluid footer">
-        <div class="container">
-            <div class="row footerro">
-
-                <a style="color: white;" href="">Copyright © Rizal Ruby Rahman.</a>
-            </div>
-        </div>
-    </footer>
-
-
+  <script src="./index.js"></script>
 </body>
-<script>
-    const navLinks = document.querySelectorAll('.nav-item')
-    const menuToggle = document.getElementById('navbarNav')
-    const bsCollapse = new bootstrap.Collapse(menuToggle, { toggle: false })
-    navLinks.forEach((l) => {
-        l.addEventListener('click', () => { bsCollapse.toggle() })
-    })
-</script>
-<script>
-
-
-    $(document).ready(function () {
-        var scroll_start = 0;
-        var startchange = $('#startchange');
-        var offset = startchange.offset();
-        $(document).scroll(function () {
-            scroll_start = $(this).scrollTop();
-            if (scroll_start > offset.top) {
-                $('#navbar').css('display', 'block');
-                $('#navbar').css('background-color', '#286f6c');
-            } else {
-                $('#navbar').css('display', 'none');
-            }
-        });
-    });
-</script>
-
-<script src="assets/js/jquery-3.2.1.min.js"></script>
-<script src="assets/js/popper.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js"></script>
-<script src="assets/plugins/slider/js/owl.carousel.min.js"></script>
-<script src="assets/js/script.js"></script>
 
 </html>
